@@ -14,6 +14,6 @@ export class GalacticAge {
     this.jupiterYearsLeft = Math.floor(this.earthYearsLeft / 11.86);
   }
   calculateLifeChoices(favoriteThing) {
-    
+    this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
   }
 }

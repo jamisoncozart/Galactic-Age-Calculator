@@ -13,12 +13,19 @@ export class GalacticAge {
     this.marsYearsLeft = Math.floor(this.earthYearsLeft / 1.88);
     this.jupiterYearsLeft = Math.floor(this.earthYearsLeft / 11.86);
   }
-  calculateLifeChoices(favoriteThing, favoriteGenre) {
+  calculateLifeChoices(favoriteThing, favoriteGenre, isAlien) {
     if(favoriteThing === 'space') {
       this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
     }
     if(favoriteGenre === 'sciFi') {
       this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
     }
+    if(isAlien) {
+      this.earthYearsLeft += 100;
+    }
+  }
+  calculateCheatDeath() {
+    //if earthAge >= 150 this.yearsCheatedDeath = earthAge - 150;
+    //calculate [planet]YearsCheatedDeath for each.
   }
 }

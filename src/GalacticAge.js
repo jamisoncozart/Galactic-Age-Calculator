@@ -17,13 +17,13 @@ export class GalacticAge {
     }
   }
   calculateLifeChoices(favoriteThing, favoriteGenre, isAlien) {
-    if(favoriteThing === 'space') {
+    if(favoriteThing === 'Space') {
       this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
     }
-    if(favoriteGenre === 'sciFi') {
+    if(favoriteGenre === 'SciFi') {
       this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
     }
-    if(isAlien) {
+    if(isAlien === 'alien') {
       this.earthYearsLeft += 100;
     }
   }

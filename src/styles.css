@@ -22,13 +22,15 @@ input {
 #planets {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .well {
   background-color: #333;
   border-radius: 5px;
   border: 2px solid white;
+  margin: 0 20px;
+  font-size: 20px;
 }
 
 .well img {

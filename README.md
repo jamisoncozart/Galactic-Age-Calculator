@@ -34,7 +34,7 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 |If user chooses 'space', lifeExpect is multiplied by 1.2|"space"|lifeExpect *= 1.2|
 |If user likes sci-fi, lifeExpect multiplied by 1.2|"likes scifi"|lifeExpect *= 1.2|
 |If user is an alien, add 100 to lifeExpect|"true"|lifeExpect += 100|
-|If user age has surpassed lifeExpect, show years cheated death|planetaryAge = 50, lifeExpect = 40| cheatedDeath = 10|
+|If user age has surpassed 150, show years cheated death|earthYears = 173| earthYearsCheatedDeath = 23 |
 
 
 
@@ -47,6 +47,8 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 * jQuery
 * Jest
 * Webpack
+* ESLint
+* Babel
 * Git
 
 ### License

@@ -28,4 +28,9 @@ describe('calculateYearsLeft() method on GalacticAge Class', () => {
     gAge.calculateYearsLeft();
     expect(gAge.earthYearsLeft).toEqual(127);
   })
+  test('should check for correctly calculated mercuryYearsLeft', () => {
+    let gAge = new GalacticAge(23);
+    gAge.calculateYearsLeft();
+    expect(gAge.mercuryYearsLeft).toEqual(529);
+  })
 })

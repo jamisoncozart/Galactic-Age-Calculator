@@ -26,7 +26,11 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 |:-----:|:----:|:------:|
 |User inputs nothing, show error message|""|_HTML 'required' form error_|
 |User inputs a number, create a GalacticAge Class that calculates and stores all the user's planetary ages|"23"|GalacticAge.earthAge = 23, GalacticAge.mercuryAge = 95, GalacticAge.venusAge = 37, GalacticAge.marsYears = 12, GalacticAge.jupiterYears = 1|
-|Calculate life expectancy based on starting lifeExpect of 150 years|"23"|GalacticAge.lifeExpect = 150;|
+|Calculate years left on earth based on starting life expectancy of 150 years|"23"|GalacticAge.earthYearsLeft = 150 - this.earthAge|
+|Calculate years left on mercury based on starting life expectancy of 150 years|"23"|GalacticAge.mercuryYearsLeft = this.earthYearsLeft / 0.24|
+|Calculate years left on venus based on starting life expectancy of 150 years|"23"|GalacticAge.venusYearsLeft = this.earthYearsLeft / 0.62|
+|Calculate years left on mars based on starting life expectancy of 150 years|"23"|GalacticAge.marsYearsLeft = this.earthYearsLeft / 1.88|
+|Calculate years left on jupiter based on starting life expectancy of 150 years|"23"|GalacticAge.jupiterYearsLeft = this.earthYearsLeft / 11.86|
 |If user is male, lifeExpect is multiplied by 0.8|"male"|lifeExpect *= 0.8|
 |If user likes sci-fi, lifeExpect multiplied by 1.2|"likes scifi"|lifeExpect *= 1.2|
 |If user made contact with aliens, add 100 to lifeExpect|"contact"|lifeExpect += 100|

@@ -13,7 +13,6 @@ function displayData(GalacticAge) {
   $("#marsYearsLeft").html(GalacticAge.marsYearsLeft);
   $("#jupiterAge").html(GalacticAge.jupiterAge);
   $("#jupiterYearsLeft").html(GalacticAge.jupiterYearsLeft);
-  console.log(GalacticAge)
 }
 
 $(document).ready(function() {
@@ -26,9 +25,7 @@ $(document).ready(function() {
     let faveThing = $("#faveThing").val();
     let faveGenre = $("#faveGenre").val();
     let isAlien = $("input:radio[name=isAlien]:checked").val();
-    console.log(`Age: ${age}, faveThing: ${faveThing}, faveGenre: ${faveGenre}, isAlien: ${isAlien}`)
     let galacticAge = new GalacticAge(age);
-    console.log(galacticAge);
     galacticAge.calculateLifeChoices(faveThing, faveGenre, isAlien);
     galacticAge.calculateYearsLeft();
     displayData(galacticAge);

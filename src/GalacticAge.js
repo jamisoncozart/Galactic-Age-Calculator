@@ -26,6 +26,10 @@ export class GalacticAge {
   }
   calculateCheatDeath() {
     //if earthAge >= 150 this.yearsCheatedDeath = earthAge - 150;
+    if(this.earthAge >= 150) {
+      this.yearsCheatedDeath = this.earthAge - 150;
+    }
     //calculate [planet]YearsCheatedDeath for each.
+
   }
 }

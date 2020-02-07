@@ -70,6 +70,11 @@ describe('calculateCheatDeath() method on GalacticAge Class', () => {
   test('should create yearsCheatedDeath value if earthAge is greater than 150 equal to the years after 150', () => {
     let gAge = new GalacticAge(173);
     gAge.calculateCheatDeath();
-    expect(gAge.yearsCheatedDeath).toEqual(23);
+    expect(gAge.earthYearsCheatedDeath).toEqual(23);
+  })
+  test('should correctly calculate mercuryYearsCheatedDeath based on earthYearsCheatedDeath', () => {
+    let gAge = new GalacticAge(173);
+    gAge.calculateCheatDeath();
+    expect(gAge.mercuryYearsCheatedDeath).toEqual(95);
   })
 })

@@ -7,11 +7,10 @@ export class GalacticAge {
     this.marsAge = Math.floor(age / 1.88);
     this.jupiterAge = Math.floor(age / 11.86);
   }
-  calculateYearsLeft() {
-    this.mercuryYearsLeft = Math.floor(this.earthYearsLeft / 0.24);
-    this.venusYearsLeft = Math.floor(this.earthYearsLeft / 0.62);
-    this.marsYearsLeft = Math.floor(this.earthYearsLeft / 1.88);
-    this.jupiterYearsLeft = Math.floor(this.earthYearsLeft / 11.86);
+  calculateCheatDeath() {
+    if(this.earthAge >= 150) {
+      this.earthYearsCheatedDeath = this.earthAge - 150;
+    }
   }
   calculateLifeChoices(favoriteThing, favoriteGenre, isAlien) {
     if(favoriteThing === 'space') {
@@ -24,12 +23,10 @@ export class GalacticAge {
       this.earthYearsLeft += 100;
     }
   }
-  calculateCheatDeath() {
-    //if earthAge >= 150 this.yearsCheatedDeath = earthAge - 150;
-    if(this.earthAge >= 150) {
-      this.yearsCheatedDeath = this.earthAge - 150;
-    }
-    //calculate [planet]YearsCheatedDeath for each.
-
+  calculateYearsLeft() {
+    this.mercuryYearsLeft = Math.floor(this.earthYearsLeft / 0.24);
+    this.venusYearsLeft = Math.floor(this.earthYearsLeft / 0.62);
+    this.marsYearsLeft = Math.floor(this.earthYearsLeft / 1.88);
+    this.jupiterYearsLeft = Math.floor(this.earthYearsLeft / 11.86);
   }
 }

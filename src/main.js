@@ -17,10 +17,11 @@ function displayData(GalacticAge) {
 
 $(document).ready(function() {
   let form = $("#form");
+  let hidden = $("#hidden");
   form.submit(function(event) {
     event.preventDefault();
     form.hide();
-    $("#hidden").show();
+    hidden.show();
     let age = parseInt($("#age").val());
     let faveThing = $("#faveThing").val();
     let faveGenre = $("#faveGenre").val();
@@ -29,5 +30,10 @@ $(document).ready(function() {
     galacticAge.calculateLifeChoices(faveThing, faveGenre, isAlien);
     galacticAge.calculateYearsLeft();
     displayData(galacticAge);
+  });
+  $("#reset").click(function() {
+    form.trigger("reset");
+    form.show();
+    hidden.hide();
   });
 });

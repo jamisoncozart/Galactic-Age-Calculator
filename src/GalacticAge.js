@@ -13,6 +13,7 @@ export class GalacticAge {
       this.mercuryYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 0.24);
       this.venusYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 0.62);
       this.marsYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 1.88);
+      this.jupiterYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 11.86);
     }
   }
   calculateLifeChoices(favoriteThing, favoriteGenre, isAlien) {

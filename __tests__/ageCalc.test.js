@@ -87,4 +87,9 @@ describe('calculateCheatDeath() method on GalacticAge Class', () => {
     gAge.calculateCheatDeath();
     expect(gAge.marsYearsCheatedDeath).toEqual(12);
   })
+  test('should correctly calculate jupiterYearsCheatedDeath based on earthYearsCheatedDeath', () => {
+    let gAge = new GalacticAge(173);
+    gAge.calculateCheatDeath();
+    expect(gAge.jupiterYearsCheatedDeath).toEqual(1);
+  })
 })

@@ -19,6 +19,10 @@ input {
 }
 
 /* Planets */
+#hidden {
+  display: none;
+}
+
 #planets {
   display: flex;
   flex-direction: row;

@@ -12,8 +12,11 @@ function displayData(GalacticAge) {
 }
 
 $(document).ready(function() {
-  $("#form").submit(function(event) {
+  let form = $("#form");
+  form.submit(function(event) {
     event.preventDefault();
+    form.hide();
+    $("#hidden").show();
     let age = $("#age").val();
     // let faveThing = $("#faveThing");
     // let faveGenre = $("#faveGenre");

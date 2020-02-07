@@ -24,8 +24,7 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 
 |Behavior | Input | Output|
 |:-----:|:----:|:------:|
-|User inputs nothing, return "error"|""|"Error"|
-|User inputs a String, return "error"|"Hello"|"Error"|
+|User inputs nothing, show error message|""|_HTML 'required' form error_|
 |User inputs a number, create a GalacticAge Class that calculates and stores all the user's planetary ages|"23"|GalacticAge.earthAge = 23, GalacticAge.mercuryAge = 95, GalacticAge.venusAge = 37, GalacticAge.marsYears = 12, GalacticAge.jupiterYears = 1|
 |Calculate life expectancy based on starting lifeExpect of 150 years|"23"|GalacticAge.lifeExpect = 150;|
 |If user is male, lifeExpect is multiplied by 0.8|"male"|lifeExpect *= 0.8|

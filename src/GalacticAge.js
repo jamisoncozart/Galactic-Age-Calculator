@@ -13,7 +13,12 @@ export class GalacticAge {
     this.marsYearsLeft = Math.floor(this.earthYearsLeft / 1.88);
     this.jupiterYearsLeft = Math.floor(this.earthYearsLeft / 11.86);
   }
-  calculateLifeChoices(favoriteThing) {
-    this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
+  calculateLifeChoices(favoriteThing, favoriteGenre) {
+    if(favoriteThing === 'space') {
+      this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
+    }
+    if(favoriteGenre === 'sciFi') {
+      this.earthYearsLeft = Math.floor(this.earthYearsLeft * 1.2);
+    }
   }
 }

@@ -52,14 +52,17 @@ describe('calculateYearsLeft() method on GalacticAge Class', () => {
 describe('calculateLifeChoices() method on GalacticAge Class', () => {
   test('should multiply earthYearsLeft by 1.2 if first parameter is "space"', () => {
     let gAge = new GalacticAge(23);
-    gAge.calculateYearsLeft();
     gAge.calculateLifeChoices("space");
     expect(gAge.earthYearsLeft).toEqual(152);
   })
   test('should multiply earthYearsLeft by 1.2 if second parameter is "sciFi"', () => {
     let gAge = new GalacticAge(23);
-    gAge.calculateYearsLeft();
     gAge.calculateLifeChoices("space", "sciFi");
     expect(gAge.earthYearsLeft).toEqual(182);
+  })
+  test('should add 100 to earthYearsLeft if third parameter is true', () => {
+    let gAge = new GalacticAge(23);
+    gAge.calculateLifeChoices("space", "sciFi", true);
+    expect(gAge.earthYearsLeft).toEqual(282);
   })
 })

@@ -8,5 +8,6 @@ export class GalacticAge {
   }
   calculateYearsLeft() {
     this.earthYearsLeft = 150 - this.earthAge;
+    this.mercuryYearsLeft = Math.floor(this.earthYearsLeft / 0.24);
   }
 }

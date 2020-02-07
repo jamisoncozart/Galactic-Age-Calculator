@@ -1,4 +1,4 @@
-import { GalacticAge } from "./../src/ageCalc.js"
+import { GalacticAge } from "../src/GalacticAge.js"
 
 describe('GalacticAge Constructor', () => {
   test('should validate that when passed an age, earthAge value is created', () => {

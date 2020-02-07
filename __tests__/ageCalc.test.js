@@ -9,4 +9,8 @@ describe('GalacticAge Constructor', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.mercuryAge).toEqual(95);
   })
+  test('should check for correctly calculated venusAge', () => {
+    let gAge = new GalacticAge(23);
+    expect(gAge.venusAge).toEqual(37);
+  })
 })

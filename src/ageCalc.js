@@ -6,4 +6,7 @@ export class GalacticAge {
     this.marsAge = Math.floor(age / 1.88);
     this.jupiterAge = Math.floor(age / 11.86);
   }
+  calculateYearsLeft() {
+    
+  }
 }

@@ -22,3 +22,10 @@ describe('GalacticAge Constructor', () => {
     expect(gAge.jupiterAge).toEqual(1);
   })
 })
+describe('calculateYearsLeft() method on GalacticAge Class', () => {
+  test('should check for correctly calculated earthYearsLeft', () => {
+    let gAge = new GalacticAge(23);
+    gAge.calculateYearsLeft();
+    expect(gAge.earthYearsLeft).toEqual(127);
+  })
+})

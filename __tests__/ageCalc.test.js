@@ -38,4 +38,9 @@ describe('calculateYearsLeft() method on GalacticAge Class', () => {
     gAge.calculateYearsLeft();
     expect(gAge.venusYearsLeft).toEqual(204);
   })
+  test('should check for correctly calculated marsYearsLeft', () => {
+    let gAge = new GalacticAge(23);
+    gAge.calculateYearsLeft();
+    expect(gAge.marsYearsLeft).toEqual(67);
+  })
 })

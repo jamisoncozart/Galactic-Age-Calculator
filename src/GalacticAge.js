@@ -11,6 +11,7 @@ export class GalacticAge {
     if(this.earthAge >= 150) {
       this.earthYearsCheatedDeath = this.earthAge - 150;
       this.mercuryYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 0.24);
+      this.venusYearsCheatedDeath = Math.floor(this.earthYearsCheatedDeath / 0.62);
     }
   }
   calculateLifeChoices(favoriteThing, favoriteGenre, isAlien) {

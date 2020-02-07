@@ -1,0 +1,62 @@
+body {
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* FORM */
+form {
+  width: 40%;
+  margin: auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+input {
+  margin: auto 0;
+}
+
+/* Planets */
+#planets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.well {
+  background-color: #333;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.well img {
+  width: 300px;
+  height: auto;
+}
+
+#mercuryImg {
+  width: 60px;
+  margin: 110px;
+}
+
+#earthImg {
+  width: 200px;
+  margin: 40px;
+}
+
+#marsImg {
+  width: 210px;
+  margin: 35px;
+}
+
+#jupiterImg {
+  width: 260px;
+  margin: 10px;
+}
+
+.well hr {
+  margin: 10px 20px;
+  background-color: white;
+}

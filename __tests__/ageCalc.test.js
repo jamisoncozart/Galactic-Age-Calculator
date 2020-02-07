@@ -1,51 +1,59 @@
 import { GalacticAge } from "../src/GalacticAge.js"
 
 describe('GalacticAge Constructor', () => {
-  test('should validate that when passed an age, earthAge value is created', () => {
+  test('should create earthAge value when passed an age', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.earthAge).toEqual(23);
   })
-  test('should check for correctly calculated mercuryAge', () => {
+  test('should correctly calculated mercuryAge', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.mercuryAge).toEqual(95);
   })
-  test('should check for correctly calculated venusAge', () => {
+  test('should correctly calculated venusAge', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.venusAge).toEqual(37);
   })
-  test('should check for correctly calculated marsAge', () => {
+  test('should correctly calculated marsAge', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.marsAge).toEqual(12);
   })
-  test('should check for correctly calculated jupiterAge', () => {
+  test('should correctly calculated jupiterAge', () => {
     let gAge = new GalacticAge(23);
     expect(gAge.jupiterAge).toEqual(1);
   })
 })
 describe('calculateYearsLeft() method on GalacticAge Class', () => {
-  test('should check for correctly calculated earthYearsLeft', () => {
+  test('should correctly calculated earthYearsLeft', () => {
     let gAge = new GalacticAge(23);
     gAge.calculateYearsLeft();
     expect(gAge.earthYearsLeft).toEqual(127);
   })
-  test('should check for correctly calculated mercuryYearsLeft', () => {
+  test('should correctly calculated mercuryYearsLeft', () => {
     let gAge = new GalacticAge(23);
     gAge.calculateYearsLeft();
     expect(gAge.mercuryYearsLeft).toEqual(529);
   })
-  test('should check for correctly calculated venusYearsleft', () => {
+  test('should correctly calculated venusYearsleft', () => {
     let gAge = new GalacticAge(23);
     gAge.calculateYearsLeft();
     expect(gAge.venusYearsLeft).toEqual(204);
   })
-  test('should check for correctly calculated marsYearsLeft', () => {
+  test('should correctly calculated marsYearsLeft', () => {
     let gAge = new GalacticAge(23);
     gAge.calculateYearsLeft();
     expect(gAge.marsYearsLeft).toEqual(67);
   })
-  test('should check for correctly calculated jupiterYearsLeft', () => {
+  test('should correctly calculated jupiterYearsLeft', () => {
     let gAge = new GalacticAge(23);
     gAge.calculateYearsLeft();
     expect(gAge.jupiterYearsLeft).toEqual(10);
+  })
+})
+describe('calculateLifeChoices() method on GalacticAge Class', () => {
+  test('should multiply earthYearsLeft by 1.2 if first parameter is "space"', () => {
+    let gAge = new GalacticAge(23);
+    gAge.calculateYearsLeft();
+    gAge.calculateLifeChoices("space");
+    expect(gAge.earthYearsLeft).toEqual(152);
   })
 })

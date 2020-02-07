@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Galactic Age Calculator</title>
+</head>
+<body>
+  <h1>Galactic Age Calculator</h1>
+  <hr>
+  <form id="form">
+    <div class="form-control">
+      <label for="age">Enter your age: </label>
+      <input type="number" id="age" placeholder="23">
+    </div>
+    <label>What is your favorite thing?</label>
+    <select class="form-control" id="faveThing">
+      <option>Coffee</option>
+      <option>Coding</option>
+      <option>Dinosaurs</option>
+      <option>Space</option>
+    </select>
+    <label>What is your favorite genre?</label>
+    <select class="form-control" id="faveGenre">
+      <option>Mystery</option>
+      <option>SciFi</option>
+      <option>Comedy</option>
+      <option>Horror</option>
+      <option>Romance</option>
+    </select>
+    <label>Are you an alien?</label>
+    <div class="radio">
+      <label>
+        <input type="radio" name="isAlien" value="false" checked>
+        No
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="isAlien" value="true">
+        yes
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </form>
+</body>
+</html>

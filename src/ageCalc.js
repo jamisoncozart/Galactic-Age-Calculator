@@ -7,6 +7,6 @@ export class GalacticAge {
     this.jupiterAge = Math.floor(age / 11.86);
   }
   calculateYearsLeft() {
-    
+    this.earthYearsLeft = 150 - this.earthAge;
   }
 }

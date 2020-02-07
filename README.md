@@ -31,9 +31,9 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 |Calculate years left on venus based on starting life expectancy of 150 years|"23"|GalacticAge.venusYearsLeft = this.earthYearsLeft / 0.62|
 |Calculate years left on mars based on starting life expectancy of 150 years|"23"|GalacticAge.marsYearsLeft = this.earthYearsLeft / 1.88|
 |Calculate years left on jupiter based on starting life expectancy of 150 years|"23"|GalacticAge.jupiterYearsLeft = this.earthYearsLeft / 11.86|
-|If user is male, lifeExpect is multiplied by 0.8|"male"|lifeExpect *= 0.8|
+|If user chooses 'space', lifeExpect is multiplied by 1.2|"space"|lifeExpect *= 1.2|
 |If user likes sci-fi, lifeExpect multiplied by 1.2|"likes scifi"|lifeExpect *= 1.2|
-|If user made contact with aliens, add 100 to lifeExpect|"contact"|lifeExpect += 100|
+|If user is an alien, add 100 to lifeExpect|"true"|lifeExpect += 100|
 |If user age has surpassed lifeExpect, show years cheated death|planetaryAge = 50, lifeExpect = 40| cheatedDeath = 10|
 
 

@@ -10,5 +10,6 @@ export class GalacticAge {
     this.earthYearsLeft = 150 - this.earthAge;
     this.mercuryYearsLeft = Math.floor(this.earthYearsLeft / 0.24);
     this.venusYearsLeft = Math.floor(this.earthYearsLeft / 0.62);
+    this.marsYearsLeft = Math.floor(this.earthYearsLeft / 1.88);
   }
 }

@@ -14,11 +14,14 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
     ```
     git clone https://github.com/jamisoncozart/Galactic-Age-Calculator
     ```
-2. Open working directory in Visual Studio Code or preferred text editor:
+2. Install all dependencies listed in the package.json:
     ```
-    code .
+    npm install
     ```
-3. Open `index.html` in Chrome or preferred browser (some styles might change if not openned in chrome)
+3. Run the start script to Lint, Build, and Start the live server, and the webpage will open automatically in your default web browser
+    ```
+    npm run start
+    ```
 
 ## Behavior Driven Development Specifications
 
@@ -35,8 +38,6 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
 |If user likes sci-fi, lifeExpect multiplied by 1.2|"likes scifi"|lifeExpect *= 1.2|
 |If user is an alien, add 100 to lifeExpect|"true"|lifeExpect += 100|
 |If user age has surpassed 150, show years cheated death|earthYears = 173| earthYearsCheatedDeath = 23 |
-
-
 
 ## Technologies Used
 

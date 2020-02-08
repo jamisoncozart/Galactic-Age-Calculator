@@ -14,6 +14,10 @@ _This Galactic Age Calculator takes a user input and returns to the user a list 
     ```
     git clone https://github.com/jamisoncozart/Galactic-Age-Calculator
     ```
+2. Change directories into the project directory:
+    ```
+    cd Galactic-Age-Calculator/
+    ```
 2. Install all dependencies listed in the package.json:
     ```
     npm install
